@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raktárprogram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Raktárprogram</h1>
+        <div id="form-container">
+            <label for="megnevezes">Megnevezés:</label>
+            <input type="text" id="megnevezes" placeholder="Termék neve">
+
+            <label for="darabszam">Darabszám:</label>
+            <input type="number" id="darabszam" placeholder="Darabszám">
+
+            <button onclick="hozzaadas()">Hozzáadás</button>
+        </div>
+
+        <div id="list-container">
+            <h2>Raktárban lévő termékek:</h2>
+            <select id="termek-lista" size="10" onclick="kivalaszt()">
+            </select>
+
+            <div id="modositas-container">
+                <label for="modositasMegnevezes">Megnevezés:</label>
+                <input type="text" id="modositasMegnevezes">
+
+                <label for="modositasDarabszam">Darabszám:</label>
+                <input type="number" id="modositasDarabszam">
+
+                <button onclick="modositas()">Módosítás</button>
+                <button onclick="torles()">Törlés</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
